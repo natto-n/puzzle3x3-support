@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - 3×3 Puzzle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f4f2 0%, #faf9f7 100%);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #78756d;
+            margin-bottom: 10px;
+        }
+        
+        .app-name {
+            font-size: 20px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #78756d;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #78756d;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #8dc2b4 0%, #7ab5a5 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-box h3 {
+            color: white;
+            margin: 0 0 15px 0;
+            font-size: 22px;
+        }
+        
+        .contact-box a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px 30px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .contact-box a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .faq-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #8dc2b4;
+        }
+        
+        .faq-item h3 {
+            margin-top: 0;
+            color: #78756d;
+        }
+        
+        .game-rules {
+            background: #fff9e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 2px solid #edd9a3;
+        }
+        
+        .game-rules h3 {
+            margin-top: 0;
+            color: #78756d;
+        }
+        
+        .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .contact-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>サポート</h1>
+        <p class="app-name">3×3 Puzzle</p>
+        
+        <p>3×3 Puzzleをご利用いただき、ありがとうございます！このページでは、よくある質問やゲームの遊び方、お問い合わせ方法をご案内しています。</p>
+        
+        <div class="contact-box">
+            <h3><span class="icon">📧</span>お問い合わせ</h3>
+            <p>ご質問やご要望がございましたら、お気軽にご連絡ください。</p>
+            <a href="mailto:yumadesign1124@gmail.com">yumadesign1124@gmail.com</a>
+        </div>
+        
+        <h2>🎮 遊び方</h2>
+        
+        <div class="game-rules">
+            <h3>基本ルール</h3>
+            <p>3×3のグリッド上で、同じ数字のタイルを合体させて、より大きな数字を作るパズルゲームです。</p>
+            
+            <ol style="margin-left: 20px; margin-top: 15px;">
+                <li><strong>スワイプで移動</strong><br>
+                画面を上下左右にスワイプすると、すべてのタイルがその方向に移動します。</li>
+                
+                <li><strong>タイルの合体</strong><br>
+                同じ数字のタイルが隣り合うと、自動的に合体して数字が2倍になります。<br>
+                例: 2 + 2 = 4、4 + 4 = 8</li>
+                
+                <li><strong>新しいタイルの出現</strong><br>
+                移動するたびに、空いているマスに新しいタイル（2または4）が出現します。</li>
+                
+                <li><strong>目標</strong><br>
+                512のタイルを作ることが目標です！さらに高い数字を目指すこともできます。</li>
+                
+                <li><strong>ゲームオーバー</strong><br>
+                すべてのマスが埋まり、どの方向にも移動できなくなるとゲームオーバーです。</li>
+            </ol>
+        </div>
+        
+        <h2>❓ よくある質問（FAQ）</h2>
+        
+        <div class="faq-item">
+            <h3>Q. スコアはどのように計算されますか？</h3>
+            <p>A. タイルが合体するたびに、合体後の数字がスコアに加算されます。例えば、2と2が合体して4になった場合、スコアに4が加算されます。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q. ベストスコアはどこに保存されますか？</h3>
+            <p>A. ベストスコアは、お使いのデバイスに自動的に保存されます。アプリを削除すると、保存されたスコアも削除されます。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q. 広告を非表示にできますか？</h3>
+            <p>A. 現在のバージョンでは、広告を非表示にする機能はございません。将来のアップデートで検討させていただきます。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q. 元に戻す（Undo）機能はありますか？</h3>
+            <p>A. 現在のバージョンでは、Undo機能は実装されていません。将来のアップデートで追加を検討しています。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q. ゲームが正しく動作しません</h3>
+            <p>A. 以下の方法をお試しください：<br>
+            1. アプリを完全に終了して、再起動してください<br>
+            2. デバイスを再起動してください<br>
+            3. App Storeから最新バージョンにアップデートしてください<br>
+            問題が解決しない場合は、下記のメールアドレスまでご連絡ください。</p>
+        </div>
+        
+        <div class="faq-item">
+            <h3>Q. データが消えてしまいました</h3>
+            <p>A. ベストスコアはデバイスに保存されています。アプリを削除した場合や、デバイスを初期化した場合は、データが削除されます。残念ながら、削除されたデータの復元はできません。</p>
+        </div>
+        
+        <h2>💡 攻略のヒント</h2>
+        <ul>
+            <li><strong>角を活用</strong>: 大きな数字は角に置いておくと管理しやすくなります</li>
+            <li><strong>一方向を意識</strong>: できるだけ同じ方向（例えば左や下）にタイルを寄せるようにすると、整理しやすくなります</li>
+            <li><strong>先を読む</strong>: 次の移動で新しいタイルがどこに出現するか考えながらプレイしましょう</li>
+            <li><strong>焦らない</strong>: 落ち着いて、各移動の結果を予測しながらプレイしましょう</li>
+        </ul>
+        
+        <h2>🔄 アップデート情報</h2>
+        <p>今後のアップデートで追加を検討している機能：</p>
+        <ul>
+            <li>Undo（元に戻す）機能</li>
+            <li>複数のテーマカラー</li>
+            <li>統計情報（プレイ回数、平均スコアなど）</li>
+            <li>Game Centerとの連携</li>
+        </ul>
+        <p>ご要望がございましたら、ぜひお聞かせください！</p>
+        
+        <h2>📬 お問い合わせ</h2>
+        <p>以下のような場合は、お気軽にご連絡ください：</p>
+        <ul>
+            <li>バグや不具合を発見した</li>
+            <li>機能の追加要望がある</li>
+            <li>操作方法が分からない</li>
+            <li>その他、ご質問やご意見</li>
+        </ul>
+        
+        <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <p><strong>Email:</strong> <a href="mailto:yumadesign1124@gmail.com" style="color: #8dc2b4; text-decoration: none; font-weight: 600;">yumadesign1124@gmail.com</a></p>
+            <p style="margin-top: 10px; margin-bottom: 0; font-size: 14px; color: #999;">
+                ※ 通常、24-48時間以内にご返信いたします。<br>
+                ※ お問い合わせの際は、使用しているデバイスとiOSのバージョンをお知らせいただけると、より迅速にサポートできます。
+            </p>
+        </div>
+        
+        <h2>📱 その他のリンク</h2>
+        <ul>
+            <li><a href="privacy.html" style="color: #8dc2b4; text-decoration: none; font-weight: 600;">プライバシーポリシー</a></li>
+            <li><a href="https://apps.apple.com/" style="color: #8dc2b4; text-decoration: none; font-weight: 600;">App Storeで評価する</a></li>
+        </ul>
+        
+        <div style="text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee;">
+            <p style="color: #999; font-size: 14px;">3×3 Puzzle をお楽しみください！🎮</p>
+        </div>
+    </div>
+</body>
+</html>
